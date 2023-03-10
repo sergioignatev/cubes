@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/style.css">
+ 
+</head>
+<body>
+  <label for="radio">Radio</label>
+  <input id="radio" type="radio">
+  <p>Display some text when the checkbox is checked:</p>
+
+  <label for="myCheck">Checkbox:</label> 
+  <input type="checkbox" id="myCheck" >
+  
+  <label for="myCheck">Checkbox2:</label> 
+  <input type="checkbox" id="myCheck2" >
+  <p id="text"></p>
+  <button onclick="myF()">chack</button>
+  <script>
+  function myF() {
+    var checkBox = document.getElementById("myCheck");
+    var checkBox2 = document.getElementById("myCheck2");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true&&checkBox2.checked){
+      document.querySelector('p').innerHTML='TRUE'
+    } else {
+      document.querySelector('p').innerHTML='False'
+    }
+  }
+  </script>
+</body>
+<script type="module" src="scripts/main.js"></script>
+
+</html>
